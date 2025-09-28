@@ -1,0 +1,16 @@
+[project]
+name = "dokploy-preview-deployments-demo"
+version = "0.1.0"
+description = "Simple Flask app for Dokploy preview deployments"
+requires-python = ">=3.10"
+dependencies = [
+    "Flask==3.1.2",
+    "requests==2.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
